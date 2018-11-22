@@ -1,0 +1,454 @@
+2018/11/22 06:17:00 [INFO] Terraform version: 0.11.10  17850e9a55d33c43d7c31fd6ac122ba97a51d899
+2018/11/22 06:17:00 [INFO] Go runtime version: go1.11.1
+2018/11/22 06:17:00 [INFO] CLI args: []string{"/usr/local/bin/terraform", "show"}
+2018/11/22 06:17:00 [DEBUG] Attempting to open CLI config file: /home/ec2-user/.terraformrc
+2018/11/22 06:17:00 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2018/11/22 06:17:00 [INFO] CLI command args: []string{"show"}
+2018/11/22 06:17:00 [DEBUG] command: loading backend config file: /home/ec2-user/tf-joy
+2018/11/22 06:17:00 [WARN] BackendOpts.Config not set, but config found
+2018/11/22 06:17:00 [INFO] command: empty terraform config, returning nil
+2018/11/22 06:17:00 [DEBUG] command: no data state file found for backend config
+2018/11/22 06:17:00 [DEBUG] New state was assigned lineage "d28f8907-6bd7-b40f-f4ea-47cf4579fe79"
+2018/11/22 06:17:00 [INFO] command: backend initialized: <nil>
+2018/11/22 06:17:00 [DEBUG] checking for provider in "."
+2018/11/22 06:17:00 [DEBUG] checking for provider in "/usr/local/bin"
+2018/11/22 06:17:00 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2018/11/22 06:17:00 [DEBUG] found provider "terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:17:00 [DEBUG] found valid plugin: "docker", "1.1.0", "/home/ec2-user/tf-joy/.terraform/plugins/linux_amd64/terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:17:00 [DEBUG] checking for provisioner in "."
+2018/11/22 06:17:00 [DEBUG] checking for provisioner in "/usr/local/bin"
+2018/11/22 06:17:00 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2018/11/22 06:17:00 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2018/11/22 06:17:00 [TRACE] Preserving existing state lineage "7c2266ca-58c3-f216-fb5b-b9816a7fff3b"
+2018/11/22 06:17:00 [TRACE] Preserving existing state lineage "7c2266ca-58c3-f216-fb5b-b9816a7fff3b"
+2018/11/22 06:17:00 [DEBUG] plugin: waiting for all plugin processes to complete...
+2018/11/22 06:17:55 [INFO] Terraform version: 0.11.10  17850e9a55d33c43d7c31fd6ac122ba97a51d899
+2018/11/22 06:17:55 [INFO] Go runtime version: go1.11.1
+2018/11/22 06:17:55 [INFO] CLI args: []string{"/usr/local/bin/terraform", "fmt"}
+2018/11/22 06:17:55 [DEBUG] Attempting to open CLI config file: /home/ec2-user/.terraformrc
+2018/11/22 06:17:55 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2018/11/22 06:17:55 [INFO] CLI command args: []string{"fmt"}
+2018/11/22 06:17:55 [DEBUG] plugin: waiting for all plugin processes to complete...
+2018/11/22 06:20:42 [INFO] Terraform version: 0.11.10  17850e9a55d33c43d7c31fd6ac122ba97a51d899
+2018/11/22 06:20:42 [INFO] Go runtime version: go1.11.1
+2018/11/22 06:20:42 [INFO] CLI args: []string{"/usr/local/bin/terraform", "plan", "-out=myplan"}
+2018/11/22 06:20:42 [DEBUG] Attempting to open CLI config file: /home/ec2-user/.terraformrc
+2018/11/22 06:20:42 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2018/11/22 06:20:42 [INFO] CLI command args: []string{"plan", "-out=myplan"}
+2018/11/22 06:20:42 [INFO] command: empty terraform config, returning nil
+2018/11/22 06:20:42 [DEBUG] command: no data state file found for backend config
+2018/11/22 06:20:42 [DEBUG] New state was assigned lineage "a7ec9ed6-2fb4-1813-5f1e-dd891a709b86"
+2018/11/22 06:20:42 [INFO] command: backend initialized: <nil>
+2018/11/22 06:20:42 [DEBUG] checking for provider in "."
+2018/11/22 06:20:42 [DEBUG] checking for provider in "/usr/local/bin"
+2018/11/22 06:20:42 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2018/11/22 06:20:42 [DEBUG] found provider "terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:20:42 [DEBUG] found valid plugin: "docker", "1.1.0", "/home/ec2-user/tf-joy/.terraform/plugins/linux_amd64/terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:20:42 [DEBUG] checking for provisioner in "."
+2018/11/22 06:20:42 [DEBUG] checking for provisioner in "/usr/local/bin"
+2018/11/22 06:20:42 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2018/11/22 06:20:42 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2018/11/22 06:20:42 [INFO] backend/local: starting Plan operation
+2018/11/22 06:20:42 [INFO] terraform: building graph: GraphTypeInput
+2018/11/22 06:20:42 [INFO] backend/local: plan calling Refresh
+2018/11/22 06:20:42 [INFO] terraform: building graph: GraphTypeRefresh
+state to "docker_image.image_id": &terraform.ResourceState{Type:"docker_image", Dependencies:[]string{}, Primary:(*terraform.InstanceState)(0xc0004dae60), Deposed:[]*terraform.InstanceState{}, Provider:"provider.docker", mu:sync.Mutex{state:0, sema:0x0}}
+2018/11/22 06:20:42 [TRACE] Graph after step *terraform.AttachStateTransformer:
+
+docker_image.image_id - *terraform.NodeRefreshableManagedResourceInstance
+2018/11/22 06:20:42 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+docker_image.image_id - *terraform.NodeRefreshableManagedResourceInstance
+2018/11/22 06:20:42 [DEBUG] ReferenceTransformer: "docker_image.image_id" references: []
+2018/11/22 06:20:42 [TRACE] Graph after step *terraform.ReferenceTransformer:
+
+docker_image.image_id - *terraform.NodeRefreshableManagedResourceInstance
+2018/11/22 06:20:42 [TRACE] Graph after step *terraform.RootTransformer:
+
+docker_image.image_id - *terraform.NodeRefreshableManagedResourceInstance
+2018/11/22 06:20:42 [TRACE] dag/walk: added new vertex: "docker_image.image_id"
+2018/11/22 06:20:42 [TRACE] dag/walk: walking "docker_image.image_id"
+2018/11/22 06:20:42 [TRACE] vertex 'root.docker_image.image_id': walking
+2018/11/22 06:20:42 [TRACE] vertex 'root.docker_image.image_id': evaluating
+2018/11/22 06:20:42 [TRACE] [walkRefresh] Entering eval tree: docker_image.image_id
+2018/11/22 06:20:42 [TRACE] root: eval: *terraform.EvalSequence
+2018/11/22 06:20:42 [TRACE] root: eval: *terraform.EvalGetProvider
+2018/11/22 06:20:42 [TRACE] root: eval: *terraform.EvalReadState
+2018/11/22 06:20:42 [TRACE] root: eval: *terraform.EvalRefresh
+2018/11/22 06:20:42 [INFO] terraform: building graph: GraphTypePlan
+sourceLifecycle{CreateBeforeDestroy:false, PreventDestroy:false, IgnoreChanges:[]string(nil)}}
+2018/11/22 06:20:42 [TRACE] Graph after step *terraform.AttachResourceConfigTransformer:
+
+docker_image.image_id - *terraform.NodePlannableResource
+docker_image.image_id1 - *terraform.NodePlannableResource
+2018/11/22 06:20:42 [INFO] backend/local: writing plan output to: myplan
+2018/11/22 06:20:42 [ERR] yamux: Failed to write header: write unix @->/tmp/plugin577391021: use of closed network connection
+2018/11/22 06:20:54 [INFO] Terraform version: 0.11.10  17850e9a55d33c43d7c31fd6ac122ba97a51d899
+2018/11/22 06:20:54 [INFO] Go runtime version: go1.11.1
+2018/11/22 06:20:54 [INFO] CLI args: []string{"/usr/local/bin/terraform", "apply", "myplan"}
+2018/11/22 06:20:54 [INFO] CLI command args: []string{"apply", "myplan"}
+2018/11/22 06:20:54 [INFO] command: initializing local backend from plan (not set)
+2018/11/22 06:20:54 [INFO] command: backend initialized: *local.Local
+2018/11/22 06:20:54 [INFO] backend/local: starting Apply operation
+2018/11/22 06:20:54 [INFO] terraform: building graph: GraphTypeApply
+2018/11/22 06:21:12 [INFO] Terraform version: 0.11.10  17850e9a55d33c43d7c31fd6ac122ba97a51d899
+2018/11/22 06:21:12 [INFO] Go runtime version: go1.11.1
+2018/11/22 06:21:12 [INFO] CLI args: []string{"/usr/local/bin/terraform", "show"}
+2018/11/22 06:21:12 [INFO] CLI command args: []string{"show"}
+2018/11/22 06:21:12 [DEBUG] command: loading backend config file: /home/ec2-user/tf-joy
+2018/11/22 06:21:12 [WARN] BackendOpts.Config not set, but config found
+2018/11/22 06:21:12 [INFO] command: empty terraform config, returning nil
+2018/11/22 06:21:12 [DEBUG] command: no data state file found for backend config
+2018/11/22 06:21:12 [DEBUG] New state was assigned lineage "489c6e86-4613-b671-8bc0-af7789f36a0b"
+2018/11/22 06:21:12 [INFO] command: backend initialized: <nil>
+2018/11/22 06:21:12 [DEBUG] checking for provider in "."
+2018/11/22 06:21:12 [DEBUG] checking for provider in "/usr/local/bin"
+2018/11/22 06:21:12 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2018/11/22 06:21:12 [DEBUG] found provider "terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:21:12 [DEBUG] found valid plugin: "docker", "1.1.0", "/home/ec2-user/tf-joy/.terraform/plugins/linux_amd64/terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:21:12 [DEBUG] checking for provisioner in "."
+2018/11/22 06:21:12 [DEBUG] checking for provisioner in "/usr/local/bin"
+2018/11/22 06:21:12 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2018/11/22 06:21:12 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2018/11/22 06:21:16 [INFO] Terraform version: 0.11.10  17850e9a55d33c43d7c31fd6ac122ba97a51d899
+2018/11/22 06:21:16 [INFO] Go runtime version: go1.11.1
+2018/11/22 06:21:16 [INFO] CLI args: []string{"/usr/local/bin/terraform", "show", "myplan"}
+2018/11/22 06:21:16 [INFO] CLI command args: []string{"show", "myplan"}
+2018/11/22 06:21:24 [INFO] Terraform version: 0.11.10  17850e9a55d33c43d7c31fd6ac122ba97a51d899
+2018/11/22 06:21:24 [INFO] Go runtime version: go1.11.1
+2018/11/22 06:21:24 [INFO] CLI args: []string{"/usr/local/bin/terraform", "show"}
+2018/11/22 06:21:24 [INFO] CLI command args: []string{"show"}
+2018/11/22 06:21:24 [DEBUG] command: loading backend config file: /home/ec2-user/tf-joy
+2018/11/22 06:21:24 [WARN] BackendOpts.Config not set, but config found
+2018/11/22 06:21:24 [INFO] command: empty terraform config, returning nil
+2018/11/22 06:21:24 [DEBUG] command: no data state file found for backend config
+2018/11/22 06:21:24 [DEBUG] New state was assigned lineage "a423d264-9d2e-3a43-9367-504309f2dd96"
+2018/11/22 06:21:24 [INFO] command: backend initialized: <nil>
+2018/11/22 06:21:24 [DEBUG] checking for provider in "."
+2018/11/22 06:21:24 [DEBUG] checking for provider in "/usr/local/bin"
+2018/11/22 06:21:24 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2018/11/22 06:21:24 [DEBUG] found provider "terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:21:24 [DEBUG] found valid plugin: "docker", "1.1.0", "/home/ec2-user/tf-joy/.terraform/plugins/linux_amd64/terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:21:24 [DEBUG] checking for provisioner in "."
+2018/11/22 06:21:24 [DEBUG] checking for provisioner in "/usr/local/bin"
+2018/11/22 06:21:24 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2018/11/22 06:21:24 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2018/11/22 06:21:24 [TRACE] Preserving existing state lineage "7c2266ca-58c3-f216-fb5b-b9816a7fff3b"
+2018/11/22 06:21:24 [TRACE] Preserving existing state lineage "7c2266ca-58c3-f216-fb5b-b9816a7fff3b"
+2018/11/22 06:27:15 [INFO] Terraform version: 0.11.10  17850e9a55d33c43d7c31fd6ac122ba97a51d899
+2018/11/22 06:27:15 [INFO] Go runtime version: go1.11.1
+2018/11/22 06:27:15 [INFO] CLI args: []string{"/usr/local/bin/terraform", "plan"}
+2018/11/22 06:27:15 [DEBUG] Attempting to open CLI config file: /home/ec2-user/.terraformrc
+2018/11/22 06:27:15 [INFO] CLI command args: []string{"plan"}
+2018/11/22 06:27:15 [INFO] command: empty terraform config, returning nil
+2018/11/22 06:27:15 [DEBUG] command: no data state file found for backend config
+2018/11/22 06:27:15 [DEBUG] New state was assigned lineage "aa1e39bd-21da-39f4-e84f-e04e64ad4030"
+2018/11/22 06:27:15 [INFO] command: backend initialized: <nil>
+2018/11/22 06:27:15 [DEBUG] checking for provider in "."
+2018/11/22 06:27:15 [DEBUG] checking for provider in "/usr/local/bin"
+2018/11/22 06:27:15 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2018/11/22 06:27:15 [DEBUG] found provider "terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:27:15 [DEBUG] found valid plugin: "docker", "1.1.0", "/home/ec2-user/tf-joy/.terraform/plugins/linux_amd64/terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:27:15 [DEBUG] checking for provisioner in "."
+2018/11/22 06:27:15 [DEBUG] checking for provisioner in "/usr/local/bin"
+2018/11/22 06:27:15 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2018/11/22 06:27:15 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2018/11/22 06:27:15 [INFO] backend/local: starting Plan operation
+2018/11/22 06:27:15 [INFO] terraform: building graph: GraphTypeInput
+g.ResourceLifecycle{CreateBeforeDestroy:false, PreventDestroy:false, IgnoreChanges:[]string(nil)}}
+2018/11/22 06:27:15 [TRACE] Graph after step *terraform.AttachResourceConfigTransformer:
+
+docker_image.image_id - *terraform.NodeValidatableResource
+docker_image.image_id1 - *terraform.NodeValidatableResource
+2018/11/22 06:27:15 [INFO] backend/local: plan calling Refresh
+2018/11/22 06:27:15 [INFO] terraform: building graph: GraphTypeRefresh
+2018/11/22 06:27:15 [INFO] backend/local: plan calling Plan
+2018/11/22 06:27:15 [INFO] terraform: building graph: GraphTypePlan
+2018-11-22T06:27:15.252Z [WARN ] plugin: error closing client during Kill: err="unexpected EOF"
+2018/11/22 06:28:57 [INFO] Terraform version: 0.11.10  17850e9a55d33c43d7c31fd6ac122ba97a51d899
+2018/11/22 06:28:57 [INFO] Go runtime version: go1.11.1
+2018/11/22 06:28:57 [INFO] CLI args: []string{"/usr/local/bin/terraform", "apply"}
+2018/11/22 06:28:57 [DEBUG] Attempting to open CLI config file: /home/ec2-user/.terraformrc
+2018/11/22 06:28:57 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2018/11/22 06:28:57 [INFO] CLI command args: []string{"apply"}
+2018/11/22 06:28:57 [INFO] command: empty terraform config, returning nil
+2018/11/22 06:28:57 [DEBUG] command: no data state file found for backend config
+2018/11/22 06:28:57 [DEBUG] New state was assigned lineage "2f48ab3e-0bc9-0694-06f2-1c05f6e1a3ba"
+2018/11/22 06:28:57 [INFO] command: backend initialized: <nil>
+2018/11/22 06:28:57 [DEBUG] checking for provider in "."
+2018/11/22 06:28:57 [DEBUG] checking for provider in "/usr/local/bin"
+2018/11/22 06:28:57 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2018/11/22 06:28:57 [DEBUG] found provider "terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:28:57 [DEBUG] found valid plugin: "docker", "1.1.0", "/home/ec2-user/tf-joy/.terraform/plugins/linux_amd64/terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:28:57 [DEBUG] checking for provisioner in "."
+2018/11/22 06:28:57 [DEBUG] checking for provisioner in "/usr/local/bin"
+2018/11/22 06:28:57 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2018/11/22 06:28:57 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2018/11/22 06:28:57 [INFO] backend/local: starting Apply operation
+2018/11/22 06:28:58 [INFO] terraform: building graph: GraphTypeInput
+g.ResourceLifecycle{CreateBeforeDestroy:false, PreventDestroy:false, IgnoreChanges:[]string(nil)}}
+2018/11/22 06:28:58 [TRACE] Graph after step *terraform.AttachResourceConfigTransformer:
+
+docker_image.image_id - *terraform.NodeValidatableResource
+docker_image.image_id1 - *terraform.NodeValidatableResource
+2018/11/22 06:28:58 [INFO] backend/local: apply calling Refresh
+2018/11/22 06:28:58 [INFO] terraform: building graph: GraphTypeRefresh
+ references: []
+2018/11/22 06:28:58 [TRACE] Graph after step *terraform.ReferenceTransformer:
+
+docker_image.image_id - *terraform.NodeRefreshableManagedResourceInstance
+2018/11/22 06:28:58 [TRACE] Graph after step *terraform.RootTransformer:
+
+docker_image.image_id - *terraform.NodeRefreshableManagedResourceInstance
+2018/11/22 06:28:58 [TRACE] dag/walk: added new vertex: "docker_image.image_id"
+2018/11/22 06:28:58 [TRACE] dag/walk: walking "docker_image.image_id"
+2018/11/22 06:28:58 [TRACE] vertex 'root.docker_image.image_id': walking
+2018/11/22 06:28:58 [TRACE] vertex 'root.docker_image.image_id': evaluating
+2018/11/22 06:28:58 [TRACE] [walkRefresh] Entering eval tree: docker_image.image_id
+2018/11/22 06:28:58 [TRACE] root: eval: *terraform.EvalSequence
+2018/11/22 06:28:58 [TRACE] root: eval: *terraform.EvalGetProvider
+2018/11/22 06:28:58 [TRACE] root: eval: *terraform.EvalReadState
+2018/11/22 06:28:58 [TRACE] root: eval: *terraform.EvalRefresh
+2018/11/22 06:28:58 [TRACE] dag/walk: walking "docker_image.image_id1"
+2018/11/22 06:28:58 [TRACE] vertex 'root.docker_image.image_id1': walking
+2018/11/22 06:28:58 [TRACE] vertex 'root.docker_image.image_id1': evaluating
+2018/11/22 06:28:58 [TRACE] [walkRefresh] Entering eval tree: docker_image.image_id1
+2018/11/22 06:28:58 [TRACE] root: eval: *terraform.EvalSequence
+2018/11/22 06:28:58 [TRACE] root: eval: *terraform.EvalInterpolate
+2018/11/22 06:28:58 [TRACE] root: eval: *terraform.EvalCountCheckComputed
+2018/11/22 06:28:58 [TRACE] root: eval: *terraform.EvalIf
+2018/11/22 06:28:58 [TRACE] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2018/11/22 06:28:58 [TRACE] [walkRefresh] Exiting eval tree: docker_image.image_id1
+2018/11/22 06:28:58 [TRACE] vertex 'root.docker_image.image_id1': expanding/walking dynamic subgraph
+2018/11/22 06:28:58 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+docker_image.image_id1 - *terraform.NodeRefreshableManagedResourceInstance
+2018/11/22 06:28:58 [TRACE] OrphanResourceCount: Starting...
+2018/11/22 06:28:58 [TRACE] OrphanReStarting for path: []
+2018/11/22 06:28:58 [TRACE] Graph after step *terraform.ProviderConfigTransformer:
+
+docker_image.image_id - *terraform.NodePlannableResource
+docker_image.image_id1 - *terraform.NodePlannableResource
+2018/11/22 06:28:58 [DEBUG] adding missing provider: docker
+2018/11/22 06:28:58 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+docker_image.image_id - *terraform.NodePlannableResource
+docker_image.image_id1 - *terraform.NodePlannableResource
+provider.docker - *terraform.NodeApplyableProvider
+2018/11/22 06:28:58 [DEBUG] resource docker_image.image_id using provider provider.docker
+2018/11/22 06:28:58 [DEBUG] resource docker_image.image_id1 using provider provider.docker
+2018/11/22 06:28:58 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+docker_image.image_id - *terraform.NodePlannableResource
+  provider.docker - *terraform.NodeApplyableProvider
+docker_image.image_id1 - *terraform.NodePlannableResource
+  provider.docker - *terraform.NodeApplyableProvider
+provider.docker - *terraform.NodeApplyableProvider
+2018/11/22 06:28:58 [TRACE] Graph after step *terraform.PruneProviderTransformer:
+
+docker_image.image_id - *terraform.NodePlannableResource
+  provider.docker - *terraform.NodeApplyableProvider
+docker_image.image_id1 - *terraform.NodePlannableResource
+  provider.docker - *terraform.NodeApplyableProvider
+provider.docker - *terraform.NodeApplyableProvider
+2018/11/22 06:28:58 [TRACE] Graph after step *terraform.ParentProviderTransformer:
+
+docker_image.image_id - *terraform.NodePlannableResource
+  provider.docker - *terraform.NodeApplyableProvider
+docker_image.image_id1 - *terraform.NodePlannableResource
+  provider.docker - *terraform.NodeApplyableProvider
+provider.docker - *terraform.NodeApplyableProvider
+2018/11/22 06:28:58 [TRACE] Graph after step *terraform.graphTransformerMulti:
+
+docker_image.image_id - *terraform.NodePlannableResource
+  provider.docker - *terraform.NodeApplyableProvider
+docker_image.image_id1 - *terraform.NodePlannableResource
+  provider.docker - *terra2018/11/22 06:30:30 [INFO] Terraform version: 0.11.10  17850e9a55d33c43d7c31fd6ac122ba97a51d899
+2018/11/22 06:30:30 [INFO] Go runtime version: go1.11.1
+2018/11/22 06:30:30 [INFO] CLI args: []string{"/usr/local/bin/terraform", "show"}
+2018/11/22 06:30:30 [DEBUG] Attempting to open CLI config file: /home/ec2-user/.terraformrc
+2018/11/22 06:30:30 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2018/11/22 06:30:30 [INFO] CLI command args: []string{"show"}
+2018/11/22 06:30:30 [DEBUG] command: loading backend config file: /home/ec2-user/tf-joy
+2018/11/22 06:30:30 [WARN] BackendOpts.Config not set, but config found
+2018/11/22 06:30:30 [INFO] command: empty terraform config, returning nil
+2018/11/22 06:30:30 [DEBUG] command: no data state file found for backend config
+2018/11/22 06:30:30 [DEBUG] New state was assigned lineage "8ae84c31-b526-3b83-c028-1d7e402a4bd0"
+2018/11/22 06:30:30 [INFO] command: backend initialized: <nil>
+2018/11/22 06:30:30 [DEBUG] checking for provider in "."
+2018/11/22 06:30:30 [DEBUG] checking for provider in "/usr/local/bin"
+2018/11/22 06:30:30 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2018/11/22 06:30:30 [DEBUG] found provider "terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:30:30 [DEBUG] found valid plugin: "docker", "1.1.0", "/home/ec2-user/tf-joy/.terraform/plugins/linux_amd64/terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:30:30 [DEBUG] checking for provisioner in "."
+2018/11/22 06:30:30 [DEBUG] checking for provisioner in "/usr/local/bin"
+2018/11/22 06:30:30 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2018/11/22 06:30:30 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2018/11/22 06:30:30 [TRACE] Preserving existing state lineage "7c2266ca-58c3-f216-fb5b-b9816a7fff3b"
+2018/11/22 06:30:30 [TRACE] Preserving existing state lineage "7c2266ca-58c3-f216-fb5b-b9816a7fff3b"
+2018/11/22 06:30:30 [DEBUG] plugin: waiting for all plugin processes to complete...
+2018/11/22 06:30:37 [INFO] Terraform version: 0.11.10  17850e9a55d33c43d7c31fd6ac122ba97a51d899
+2018/11/22 06:30:37 [INFO] Go runtime version: go1.11.1
+2018/11/22 06:30:37 [INFO] CLI args: []string{"/usr/local/bin/terraform", "plan"}
+2018/11/22 06:30:37 [DEBUG] Attempting to open CLI config file: /home/ec2-user/.terraformrc
+2018/11/22 06:30:37 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2018/11/22 06:30:37 [INFO] CLI command args: []string{"plan"}
+2018/11/22 06:30:37 [INFO] command: empty terraform config, returning nil
+2018/11/22 06:30:37 [DEBUG] command: no data state file found for backend config
+2018/11/22 06:30:37 [DEBUG] New state was assigned lineage "c2b7492b-76b9-26f6-c7bf-114d3eedca7f"
+2018/11/22 06:30:37 [INFO] command: backend initialized: <nil>
+2018/11/22 06:30:37 [DEBUG] checking for provider in "."
+2018/11/22 06:30:37 [DEBUG] checking for provider in "/usr/local/bin"
+2018/11/22 06:30:37 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2018/11/22 06:30:37 [DEBUG] found provider "terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:30:37 [DEBUG] found valid plugin: "docker", "1.1.0", "/home/ec2-user/tf-joy/.terraform/plugins/linux_amd64/terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:30:37 [DEBUG] checking for provisioner in "."
+2018/11/22 06:30:37 [DEBUG] checking for provisioner in "/usr/local/bin"
+2018/11/22 06:30:37 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2018/11/22 06:30:37 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2018/11/22 06:30:37 [INFO] backend/local: starting Plan operation
+2018/11/22 06:30:37 [INFO] terraform: building graph: GraphTypeInput
+2018/11/22 06:30:37 [INFO] backend/local: plan calling Refresh
+2018/11/22 06:30:37 [INFO] terraform: building graph: GraphTypeRefresh
+ge.image_id1" references: []
+2018/11/22 06:30:37 [TRACE] Graph after step *terraform.ReferenceTransformer:
+
+docker_image.image_id1 - *terraform.NodeRefreshableManagedResourceInstance
+2018/11/22 06:30:37 [TRACE] Graph after step *terraform.RootTransformer:
+
+docker_image.image_id1 - *terraform.NodeRefreshableManagedResourceInstance
+2018/11/22 06:30:37 [TRACE] dag/walk: added new vertex: "docker_image.image_id1"
+2018/11/22 06:30:37 [TRACE] dag/walk: walking "docker_image.image_id1"
+2018/11/22 06:30:37 [TRACE] vertex 'root.docker_image.image_id1': walking
+2018/11/22 06:30:37 [TRACE] vertex 'root.docker_image.image_id1': evaluating
+2018/11/22 06:30:37 [TRACE] [walkRefresh] Entering eval tree: docker_image.image_id1
+2018/11/22 06:30:37 [TRACE] root: eval: *terraform.EvalSequence
+2018/11/22 06:30:37 [TRACE] root: eval: *terraform.EvalGetProvider
+2018/11/22 06:30:37 [TRACE] root: eval: *terraform.EvalReadState
+2018/11/22 06:30:37 [TRACE] root: eval: *terraform.EvalRefresh
+2018/11/22 06:30:37 [TRACE] dag/walk: walking "docker_image.image_id"
+2018/11/22 06:30:37 [TRACE] vertex 'root.docker_image.image_id': walking
+2018/11/22 06:30:37 [TRACE] vertex 'root.docker_image.image_id': evaluating
+2018/11/22 06:30:37 [TRACE] [walkRefresh] Entering eval tree: docker_image.image_id
+2018/11/22 06:30:37 [TRACE] root: eval: *terraform.EvalSequence
+2018/11/22 06:30:37 [TRACE] root: eval: *terraform.EvalInterpolate
+2018/11/22 06:30:37 [TRACE] root: eval: *terraform.EvalCountCheckComputed
+2018/11/22 06:30:37 [TRACE] root: eval: *terraform.EvalIf
+2018/11/22 06:30:37 [TRACE] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2018/11/22 06:30:37 [TRACE] [walkRefresh] Exiting eval tree: docker_image.image_id
+2018/11/22 06:30:37 [TRACE] vertex 'root.docker_image.image_id': expanding/walking dynamic subgraph
+2018/11/22 06:30:37 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+docker_image.image_id - *terraform.NodeRefreshableManagedResourceInstance
+2018/11/22 06:30:37 [TRACE] OrphanResourceCount: Starting...
+2018/11/22 06:30:37 [TR2018/11/22 06:30:37 [INFO] backend/local: plan calling Plan
+2018/11/22 06:30:37 [INFO] terraform: building graph: GraphTypePlan
+2018/11/22 06:30:52 [INFO] Terraform version: 0.11.10  17850e9a55d33c43d7c31fd6ac122ba97a51d899
+2018/11/22 06:30:52 [INFO] Go runtime version: go1.11.1
+2018/11/22 06:30:52 [INFO] CLI args: []string{"/usr/local/bin/terraform", "apply"}
+2018/11/22 06:30:52 [DEBUG] Attempting to open CLI config file: /home/ec2-user/.terraformrc
+2018/11/22 06:30:52 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2018/11/22 06:30:52 [INFO] CLI command args: []string{"apply"}
+2018/11/22 06:30:52 [INFO] command: empty terraform config, returning nil
+2018/11/22 06:30:52 [DEBUG] command: no data state file found for backend config
+2018/11/22 06:30:52 [DEBUG] New state was assigned lineage "5a9a6165-3a8d-3d84-69be-920c49baf698"
+2018/11/22 06:30:52 [INFO] command: backend initialized: <nil>
+2018/11/22 06:30:52 [DEBUG] checking for provider in "."
+2018/11/22 06:30:52 [DEBUG] checking for provider in "/usr/local/bin"
+2018/11/22 06:30:52 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2018/11/22 06:30:52 [DEBUG] found provider "terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:30:52 [DEBUG] found valid plugin: "docker", "1.1.0", "/home/ec2-user/tf-joy/.terraform/plugins/linux_amd64/terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:30:52 [DEBUG] checking for provisioner in "."
+2018/11/22 06:30:52 [DEBUG] checking for provisioner in "/usr/local/bin"
+2018/11/22 06:30:52 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2018/11/22 06:30:52 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2018/11/22 06:30:52 [INFO] backend/local: starting Apply operation
+2018/11/22 06:30:52 [INFO] terraform: building graph: GraphTypeInput
+2018/11/22 06:30:52 [INFO] backend/local: apply calling Refresh
+2018/11/22 06:30:52 [INFO] terraform: building graph: GraphTypeRefresh
+2018/11/22 06:30:52 [INFO] backend/local: apply calling Plan
+2018/11/22 06:30:52 [INFO] terraform: building graph: GraphTypePlan
+2018/11/22 06:30:55 [INFO] terraform: building graph: GraphTypeApply
+2018/11/22 06:31:24 [ERR] yamux: Failed to write header: write unix @->/tmp/plugin263028166: use of closed network connection
+2018/11/22 06:31:38 [INFO] Terraform version: 0.11.10  17850e9a55d33c43d7c31fd6ac122ba97a51d899
+2018/11/22 06:31:38 [INFO] Go runtime version: go1.11.1
+2018/11/22 06:31:38 [INFO] CLI args: []string{"/usr/local/bin/terraform", "plan"}
+2018/11/22 06:31:38 [DEBUG] Attempting to open CLI config file: /home/ec2-user/.terraformrc
+2018/11/22 06:31:38 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2018/11/22 06:31:38 [INFO] CLI command args: []string{"plan"}
+2018/11/22 06:31:38 [INFO] command: empty terraform config, returning nil
+2018/11/22 06:31:38 [DEBUG] command: no data state file found for backend config
+2018/11/22 06:31:38 [DEBUG] New state was assigned lineage "8d2906e4-cffc-aef3-7b24-114b4bed71d0"
+2018/11/22 06:31:38 [INFO] command: backend initialized: <nil>
+2018/11/22 06:31:38 [DEBUG] checking for provider in "."
+2018/11/22 06:31:38 [DEBUG] checking for provider in "/usr/local/bin"
+2018/11/22 06:31:38 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2018/11/22 06:31:38 [DEBUG] found provider "terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:31:38 [DEBUG] found valid plugin: "docker", "1.1.0", "/home/ec2-user/tf-joy/.terraform/plugins/linux_amd64/terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:31:38 [DEBUG] checking for provisioner in "."
+2018/11/22 06:31:38 [DEBUG] checking for provisioner in "/usr/local/bin"
+2018/11/22 06:31:38 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2018/11/22 06:31:38 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2018/11/22 06:31:38 [INFO] backend/local: starting Plan operation
+2018/11/22 06:31:38 [INFO] terraform: building graph: GraphTypeInput
+docker_image.image_id
+2018/11/22 06:31:38 [INFO] backend/local: plan calling Refresh
+2018/11/22 06:31:38 [INFO] terraform: building graph: GraphTypeRefresh
+2018/11/22 06:31:38 [TRACE] ConfigTransformer: Starting for path: []
+2018/11/22 06:31:38 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+docker_image.image_id - *terraform.NodeRefreshableManagedResource
+docker_image.image_id1 - *terraform.NodeRefreshableManagedResource
+2018/11/22 06:31:38 [TRACE] ConfigTransformer: Starting for path: []
+2018/11/22 06:31:38 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+docker_image.image_id - *terraform.NodeRefreshableManagedResource
+docker_image.image_id1 - *terraform.NodeRefreshableManagedResource
+ocker_image.image_id1": &terraform.ResourceState{Type:"docker_image", Dependencies:[]string{}, Primary:(*terraform.InstanceState)(0xc0004dee60), Deposed:[]*terraform.InstanceState{}, Provider:"provider.docker", mu:sync.Mutex{state:0, sema:0x0}}
+2018/11/22 06:31:38 [TRACE] Graph after step *terraform.AttachStateTransformer:
+
+docker_image.image_id1 - *terraform.NodeRefreshableManagedResourceInstance
+2018/11/22 06:31:38 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+docker_image.image_id1 - *terraform.NodeRefreshableManagedResourceInstance
+2018/11/22 06:31:38 [DEBUG] ReferenceTransformer: "docker_image.image_id1" references: []
+2018/11/22 06:31:38 [TRACE] Graph after step *terraform.ReferenceTransformer:
+
+docker_image.image_id1 - *terraform.NodeRefreshableManagedResourceInstance
+2018/11/22 06:31:38 [TRACE] Graph after step *terraform.RootTransformer:
+
+docker_image.image_id1 - *terraform.NodeRefreshableManagedResourceInstance
+2018/11/22 06:31:38 [TRACE] dag/walk: added new vertex: "docker_image.image_id1"
+2018/11/22 06:31:38 [TRACE] dag/walk: walking "docker_image.image_id1"
+2018/11/22 06:31:38 [TRACE] vertex 'root.docker_image.image_id1': walking
+2018/11/22 06:31:38 [TRACE] vertex 'root.docker_image.image_id1': evaluating
+2018/11/22 06:31:38 [TRACE] [walkRefresh] Entering eval tree: docker_image.image_id1
+2018/11/22 06:31:38 [TRACE] root: eval: *terraform.EvalSequence
+2018/11/22 06:31:38 [TRACE] root: eval: *terraform.EvalGetProvider
+2018/11/22 06:31:38 [TRACE] root: eval: *terraform.EvalReadState
+2018/11/22 06:31:38 [TRACE] root: eval: *terraform.EvalRefresh
+2018/11/22 06:31:38 [INFO] terraform: building graph: GraphTypePlan
+2018/11/22 06:31:38 [ERR] yamux: Failed to write header: write unix @->/tmp/plugin246211367: use of closed network connection
+2018/11/22 06:31:49 [INFO] Terraform version: 0.11.10  17850e9a55d33c43d7c31fd6ac122ba97a51d899
+2018/11/22 06:31:49 [INFO] Go runtime version: go1.11.1
+2018/11/22 06:31:49 [INFO] CLI args: []string{"/usr/local/bin/terraform", "apply"}
+2018/11/22 06:31:49 [INFO] CLI command args: []string{"apply"}
+2018/11/22 06:31:49 [INFO] command: empty terraform config, returning nil
+2018/11/22 06:31:49 [DEBUG] command: no data state file found for backend config
+2018/11/22 06:31:49 [DEBUG] New state was assigned lineage "7cd4a358-600c-ed3d-0032-6fe1237273af"
+2018/11/22 06:31:49 [INFO] command: backend initialized: <nil>
+2018/11/22 06:31:49 [DEBUG] checking for provider in "."
+2018/11/22 06:31:49 [DEBUG] checking for provider in "/usr/local/bin"
+2018/11/22 06:31:49 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2018/11/22 06:31:49 [DEBUG] found provider "terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:31:49 [DEBUG] found valid plugin: "docker", "1.1.0", "/home/ec2-user/tf-joy/.terraform/plugins/linux_amd64/terraform-provider-docker_v1.1.0_x4"
+2018/11/22 06:31:49 [DEBUG] checking for provisioner in "."
+2018/11/22 06:31:49 [DEBUG] checking for provisioner in "/usr/local/bin"
+2018/11/22 06:31:49 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2018/11/22 06:31:49 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2018/11/22 06:31:49 [INFO] backend/local: starting Apply operation
+2018/11/22 06:31:49 [INFO] terraform: building graph: GraphTypeInput
+2018/11/22 06:31:49 [INFO] backend/local: apply calling Refresh
+2018/11/22 06:31:49 [INFO] terraform: building graph: GraphTypeRefresh
+2018/11/22 06:31:49 [INFO] backend/local: apply calling Plan
+2018/11/22 06:31:49 [INFO] terraform: building graph: GraphTypePlan
