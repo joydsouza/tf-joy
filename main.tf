@@ -5,3 +5,8 @@ resource "docker_image" "image_id" {
 resource "docker_image" "image_id1" {
   name = "ubuntu:latest"
 }
+
+resource "docker_container" "container_id" {
+  image = "${docker_image.image_id.latest}"
+  name  = "foo"
+}
